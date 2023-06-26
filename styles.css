@@ -1,0 +1,134 @@
+:root {
+    --color-letter: #bcbcbc;
+    --color-letter2: #757575;
+    --color-background: #000000;
+    --color-primary1: #000000;
+    --color-primary2: #111111;
+    --color-primary3: #6f6f6f;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-letter);
+    font-family: sans-serif;
+    font-size: 20px; 
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+
+.container {
+    max-width: 900px;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.container h1 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#cash-register-form {
+    height: auto;
+
+}
+
+
+label {
+    display: inline-block;
+    width: 100%;
+    margin: 10px auto 5px;
+
+}
+
+input {
+    padding: 5px;
+    background-color: var(--color-letter);
+    border: none;
+    border-color: var(--color-letter);
+    border-radius: 2px;
+}
+
+
+input:hover,
+input:focus {
+    outline: 1px solid var(--color-letter);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+#cid-fields {
+    text-align: start;
+    width: 100%;
+
+}
+
+#cid-fields label {
+    color: var(--color-letter2);
+    font-size: 16px;
+    display: inline-block;
+    width: 80%;
+    margin: 10px auto 5px;
+
+
+    
+}
+
+#cid-fields input {
+    font-size: 15px;
+    text-align: center;
+    background-color: var(--color-background) ;
+    color: var(--color-letter2);
+    padding: 5px;
+    width: 20%;
+    border: 1px solid var(--color-letter2);
+    text-decoration: none;
+
+}
+
+
+
+
+button {
+    color: var(--color-letter2);
+    background-color: var(--color-primary2);
+    margin: 20px auto;
+    font-size: 18px;
+    padding: 10px 18px;
+    text-align: center;
+    border: none;
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    color: var(--color-primary2);
+    background-color: var(--color-letter2);
+}
+
+#result {
+    min-height: 40px;
+
+    color: var(--color-letter);
+}
